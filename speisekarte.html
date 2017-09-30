@@ -1,105 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Purrfect Match</title>
-	<link href="favicon.ico" rel="icon" type="image/x-icon" />
-	<script src="https://use.fontawesome.com/8733f728e9.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   	<link rel="stylesheet" type="text/css" href="speisekarte.css">
+  <title>Purrfect Match</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="https://use.fontawesome.com/8733f728e9.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="speisekarte.css">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-left: 16px solid brown;
+  border-right: 16px solid brown;
+  border-top: 16px solid orange;
+  border-bottom: 16px solid orange;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
 </head>
-<body>
-
-<!-- NAVBAR START -->
-
-
-
-
-<nav class="navbar navbar-default">
-<div class="container">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<body onload="myFunction()" style="margin:0;">
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
 
 
 
-      <a class="navbar-brand" href="#">Café Neko</a>
-    </div>
+        <a class="navbar-brand" href="#">Café Neko</a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      	<ul class="nav navbar-nav">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
 
-        <li class=""><a href="index.html">Home </a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Gallerie</a></li>
-				<li><a href="#">Die Katzen</a></li>
-				<li class="active"><a href="#">Speisekarte</a></li>
-				<li><a href="#">Impressum</a></li>
+          <li class=""><a href="index.html">Home </a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Gallerie</a></li>
+          <li><a href="#">Die Katzen</a></li>
+          <li class="active"><a href="#">Speisekarte</a></li>
+          <li><a href="#">Impressum</a></li>
+
+
+
+
+          </ul>
+
+
+        <ul class="nav navbar-nav navbar-right">
 
 
 
 
         </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </div>
+  </nav>
 
 
-      <ul class="nav navbar-nav navbar-right">
+  <!-- NAVBAR END -->
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
 
 
 
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  <div class="container">
+  	<div class="row">
+  	<div id="content">
+  			<div id="karte1"class="col-lg-5">
+  				<img id="menu1" src="menupage1.jpg" alt="">
+
+  				</div>
+
+  				<div class="col-lg-2">
+
+  				</div>
+  				<div id="karte2" class="col-lg-5">
+  					<img id="menu2" src="menupage2.jpg" alt="">
+  				</div>
+
+
+
+
+  		</div>
+  	</div>
   </div>
-</nav>
-
-
-<!-- NAVBAR END -->
-
-
-
-<div class="container">
-	<div class="row">
-	<div id="content">
-			<div id="karte1"class="col-lg-5">
-				<img id="menu1" src="menupage1.jpg" alt="">
-
-				</div>
-
-				<div class="col-lg-2">
-
-				</div>
-				<div id="karte2" class="col-lg-5">
-					<img id="menu2" src="menupage2.jpg" alt="">
-				</div>
 
 
 
 
-		</div>
-	</div>
+
+
+
+
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </div>
 
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
 
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
-
-
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
