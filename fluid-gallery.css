@@ -16,6 +16,11 @@ background-repeat: no-repeat;
 
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 #kontaktcontainer {
   background-color: rgba(193, 66, 66, 0.2);
   border-radius: 20px;
