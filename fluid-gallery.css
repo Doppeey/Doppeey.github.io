@@ -56,18 +56,21 @@ width: 0px;
     background-image: url(images/grassthumbnail.jpg);
 }
 .catpic {
-    margin-top: 15px;
+  padding-top: 3%;
+    margin-top: 8%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px;
+    height: 200px;
     border-radius: 250px;
 }
 .catDescription {
 
-    height: 250px;
+margin-top: 5%;
+    height: 15%;
     text-align: left;
     padding-left: 50px;
+    margin-bottom: 5%;
 
 }
 
