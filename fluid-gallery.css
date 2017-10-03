@@ -1,14 +1,39 @@
 body {
     min-height: 100vh;
-    font: normal 16px sans-serif;
+
     background:url(dust.png);
   	background-size: repeat;
+}
+
+#kontaktlogo {
+
+margin-bottom: 15px;
+height: 210px;
+background-image: url(neko.png);
+background-size: contain;
+background-repeat: no-repeat;
+
+
+}
+
+#kontaktcontainer {
+  background-color: rgba(193, 66, 66, 0.2);
+  border-radius: 20px;
+}
+
+#gap{
+width: 0px;
+}
+
+#frame {
+  border-radius: 20px;
+  margin-right: 15px;
 }
 
 #Moritz {
 
     background-image: url(images/lionthumbnail.jpg);
-    
+
 }
 
 #Thomas {
@@ -44,7 +69,7 @@ body {
 .container.gallery-container {
 
   border-radius: 15px;
-  background-color: #EAD1C4;
+  background-color: rgba(193, 66, 66, 0.2);
   color: #35373a;
     min-height: 100vh;
     padding: 30px 50px;
