@@ -24,15 +24,30 @@
 
 width: 130%;
 height: auto;
+padding-right: 30%;
+transition: all .5s ease-in-out;
+}
+
+#menu1:hover {
+	width: 160%;
+	height: auto;
+	padding-top: 5%;
+
+}
+
+#menu2:hover {
+	width: 160%;
+	height: auto;
+	padding-top: 5%;
 
 }
 
 #menu2 {
 
-
+padding-right: 30%;
   width: 130%;
   height: auto;
-
+  transition: all .5s ease-in-out;
 
 }
 

@@ -37,8 +37,9 @@ width: 0px;
 
 #Moritz {
 
-    background-image: url(images/lionthumbnail.jpg);
 
+    background-image: url(images/lionthumbnail.jpg);
+    background-position: center;
 }
 
 #Thomas {
@@ -55,20 +56,24 @@ width: 0px;
 #Sonia {
     background-image: url(images/grassthumbnail.jpg);
 }
+
+
 .catpic {
   padding-top: 3%;
     margin-top: 8%;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
-    border-radius: 250px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }
 .catDescription {
 
 margin-top: 5%;
     height: 15%;
-    text-align: left;
+    text-align: center;
     padding-left: 50px;
     margin-bottom: 5%;
 
