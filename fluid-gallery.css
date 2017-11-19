@@ -1,7 +1,10 @@
 body {
     min-height: 100vh;
 
-    background:url(dust.png);
+    background:url(wood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   	background-size: repeat;
 }
 
@@ -21,9 +24,16 @@ html {
     width: 100%;
 }
 
+#kontaktdaten {
+
+  font-size: 20px;
+
+}
+
 #kontaktcontainer {
-  background-color: rgba(193, 66, 66, 0.2);
+  background-color: rgba(207, 206, 206,0.7);
   border-radius: 20px;
+
 }
 
 #gap{
@@ -82,7 +92,7 @@ margin-top: 5%;
 .container.gallery-container {
 
   border-radius: 15px;
-  background-color: rgba(193, 66, 66, 0.2);
+  background-color: rgba(207, 206, 206,0.7);
   color: #35373a;
     min-height: 100vh;
     padding: 30px 50px;
