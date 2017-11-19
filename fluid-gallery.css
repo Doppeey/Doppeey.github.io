@@ -3,9 +3,14 @@ body {
 
     background:url(wood.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-  	background-size: repeat;
+  	
+}
+
+.katzenbody {
+	
+	background-size: contain;
 }
 
 #kontaktlogo {
@@ -169,4 +174,6 @@ margin-top: 5%;
     body {
         padding: 0;
     }
+}
+.katzenbody {
 }
